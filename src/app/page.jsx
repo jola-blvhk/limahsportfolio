@@ -7,7 +7,6 @@ import Lottie from "lottie-react";
 import { poppins } from "../../utils/fonts";
 import projects from "../components/featuredProjectsdb.json";
 
-
 export default function Home() {
   return (
     <main className="mt-20  bg-primary-white-100 ">
@@ -28,7 +27,10 @@ export default function Home() {
               user interfaces, graphics presentations etc, with a background in
               architecture. I am also a certified Product manager
             </p>
-            <Button text="Hire me" classN="bg-primary-black-100 text-primary-white-100" />
+            <Button
+              text="Hire me"
+              classN="bg-primary-black-100 text-primary-white-100"
+            />
             <Lottie
               animationData={Scroll}
               loop={true}
@@ -50,28 +52,28 @@ export default function Home() {
       {/* featured products */}
       <section className="px-3 md:px-6 lg:px-9 py-20 md:py-32 bg-gradient-black">
         <div className="maxWidthSection">
-        <h1
-          className={`text-left md:text-center font-bold text-2xl md:text-4xl mb-12 md:mb-20 text-primary-gray-80 ${poppins.className}`}
-        >
-          Featured Projects
-        </h1>
-        <div className="grid gap-24 md:gap-12 ">
-          {projects.map((project, index) => {
-            return (
-              <div key={index}>
-                <FeaturedProjects
-                  name={project.title}
-                  description={project.description}
-                  role={project.role}
-                  year={project.year}
-                  status={project.status}
-                  image={project.image}
-                />
-              </div>
-            );
-          })}
+          <h1
+            className={`text-left md:text-center font-bold text-3xl md:text-4xl mb-12 md:mb-20 text-primary-gray-80 ${poppins.className}`}
+          >
+            Featured Projects
+          </h1>
+          <div className="grid gap-24 md:gap-12 ">
+            {projects.map((project, index) => {
+              return (
+                <div key={index}>
+                  <FeaturedProjects
+                    name={project.title}
+                    description={project.description}
+                    role={project.role}
+                    year={project.year}
+                    status={project.status}
+                    image={project.image}
+                  />
+                </div>
+              );
+            })}
           </div>
-          </div>
+        </div>
       </section>
     </main>
   );
