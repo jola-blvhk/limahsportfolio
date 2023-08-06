@@ -15,6 +15,8 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-black":
+          "radial-gradient(50% 50.00% at 50% 50.00%, rgba(0, 0, 0, 0.79) 0%, #000 100%)",
       },
       colors: {
         primary: {
@@ -22,14 +24,14 @@ module.exports = {
           "black-90": "#2F2F2F",
           "white-100": "#FFFFFF",
           "white-90": "#FAFAFA",
-          "gray-80": "#D9D9D9",
+          "gray-80": "#B9B9B9",
           "gray-100": "#EEE",
           "gray-90": "#979797",
         },
         secondary: {
           "orange-100": "#FF7A00",
-          "peach-90": "#FBAF85",
-          "red-100": "#CD2C2C",
+          "blue-100": "#86CAFB",
+          "green-100": "#A4FB86",
         },
       },
       boxShadow: {

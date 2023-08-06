@@ -1,16 +1,18 @@
-"use client"
+"use client";
 
-import { Button } from "@/components";
+import { Button, FeaturedProjects } from "@/components";
 import Image from "next/image";
 import Scroll from "../scroll.json";
 import Lottie from "lottie-react";
 import { poppins } from "../../utils/fonts";
-export default function Home() {
+import projects from "../components/featuredProjectsdb.json";
 
+import { BsArrowUpRightCircle } from "react-icons/bs";
+export default function Home() {
   return (
     <main className="mt-20  bg-primary-white-100 ">
-      <section className="  px-3 md:px-6 lg:px-9 pt-20 bg-primary-gray-100">
-        <div className=" grid md:flex maxWidthSection items-end">
+      <section className="  px-3 md:px-6 lg:px-9 pt-20 pb-20 md:pb-0  bg-primary-gray-100">
+        <div className=" grid gap-10 md:gap-0 md:flex maxWidthSection items-center lg:items-end ">
           <div className="space-y-6 order-last md:order-first md:w-[50%] ">
             <h1
               className={` ${poppins.className} text-primary-black-100 font-extrabold text-3xl md:text-5xl `}
@@ -42,6 +44,31 @@ export default function Home() {
               className="w-[100%] h-[100%] sm:w-[80%] sm:h-[80%] md:w-[130%] md:h-[110%] m-auto object-contain "
             />
           </div>
+        </div>
+      </section>
+
+      {/* featured products */}
+      <section className="px-3 md:px-6 lg:px-9 py-20 md:py-36 bg-gradient-black">
+        <div className="grid gap-10 maxWidthSection">
+          <h1
+            className={`text-left md:text-center font-bold text-2xl md:text-4xl mb-8 #B9B9B9 ${poppins.className}`}
+          >
+            Featured Projects
+          </h1>
+          {projects.map((project, index) => {
+            return (
+              <div key={index}>
+                <FeaturedProjects
+                  name={project.title}
+                  description={project.description}
+                  role={project.role}
+                  year={project.year}
+                  status={project.status}
+                  image={project.image}
+                />
+              </div>
+            );
+          })}
         </div>
       </section>
     </main>

@@ -7,9 +7,6 @@ import { Header } from "../components/index";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
-
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
