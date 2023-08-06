@@ -28,7 +28,7 @@ export default function Home() {
               user interfaces, graphics presentations etc, with a background in
               architecture. I am also a certified Product manager
             </p>
-            <Button text="Hire me" classN="bg-primary-black-100" />
+            <Button text="Hire me" classN="bg-primary-black-100 text-primary-white-100" />
             <Lottie
               animationData={Scroll}
               loop={true}
