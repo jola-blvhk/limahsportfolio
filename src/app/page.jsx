@@ -1,12 +1,12 @@
 "use client";
 
-import { Button, FeaturedProjects } from "@/components";
+import { Button, FeaturedProjects, CoreCompetence} from "@/components";
 import Image from "next/image";
 import Scroll from "../scroll.json";
 import Lottie from "lottie-react";
 import { poppins } from "../../utils/fonts";
 import projects from "../components/featuredProjectsdb.json";
-
+import competencies from "../components/coreCompetencies.json"
 export default function Home() {
   return (
     <main className="mt-20  bg-primary-white-100 ">
@@ -68,6 +68,29 @@ export default function Home() {
                     year={project.year}
                     status={project.status}
                     image={project.image}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* core competence */}
+      <section className="px-3 md:px-6 lg:px-9  bg-gradient-black">
+        <div className="maxWidthSection  border-t border-[rgba(255, 255, 255, 0.40);] py-20 md:py-32">
+          <h1
+            className={`text-left md:text-center font-bold text-3xl md:text-4xl mb-12 md:mb-20 text-primary-gray-80 ${poppins.className}`}
+          >
+            Core Competencies
+          </h1>
+          <div className="grid md:grid-cols-2 gap-y-10 md:gap-x-20 ">
+            {competencies.map((skill, index) => {
+              return (
+                <div key={index}>
+                  <CoreCompetence
+                    name={skill.name}
+                    image={skill.logo}
                   />
                 </div>
               );

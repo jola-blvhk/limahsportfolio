@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+   "name": "Ui Design",
+   "logo": "./coreCompetencies/uiDesign.svg"
+  },
+  {
+    "id": "2",
+   "name": "Interaction Design",
+   "logo": "./coreCompetencies/interactionDesign.svg"
+  },
+  {
+    "id": "3",
+   "name": "Product Management ( Certified )",
+   "logo": "./coreCompetencies/productManagement.svg"
+  },
+  {
+    "id": "4",
+   "name": "Ux Research",
+   "logo": "./coreCompetencies/uxResearch.svg"
+  },
+  {
+    "id": "5",
+   "name": "3D Modeling",
+   "logo": "./coreCompetencies/threedmodeling.svg"
+  }
+ 
+]
