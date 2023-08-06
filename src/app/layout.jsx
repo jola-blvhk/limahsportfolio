@@ -7,11 +7,7 @@ import { Header } from "../components/index";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
-export const poppins = Poppins({
-  weight: "700",
-  subsets: ["latin"],
-  variable: "--font-poppins",
-});
+
 
 export const Metadata = {
   title: "Create Next App",

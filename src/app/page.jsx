@@ -4,7 +4,7 @@ import { Button } from "@/components";
 import Image from "next/image";
 import Scroll from "../scroll.json";
 import Lottie from "lottie-react";
-import { poppins } from "./layout";
+import { poppins } from "../../utils/fonts";
 export default function Home() {
 
   return (
