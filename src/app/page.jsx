@@ -48,10 +48,10 @@ export default function Home() {
       </section>
 
       {/* featured products */}
-      <section className="px-3 md:px-6 lg:px-9 py-20 md:py-36 bg-gradient-black">
+      <section className="px-3 md:px-6 lg:px-9 py-20 md:py-32 bg-gradient-black">
         <div className="maxWidthSection">
         <h1
-          className={`text-left md:text-center font-bold text-2xl md:text-4xl mb-8 #B9B9B9 ${poppins.className}`}
+          className={`text-left md:text-center font-bold text-2xl md:text-4xl mb-12 md:mb-20 text-primary-gray-80 ${poppins.className}`}
         >
           Featured Projects
         </h1>
