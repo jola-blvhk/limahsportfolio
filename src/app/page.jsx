@@ -7,7 +7,7 @@ import Lottie from "lottie-react";
 import { poppins } from "../../utils/fonts";
 import projects from "../components/featuredProjectsdb.json";
 
-import { BsArrowUpRightCircle } from "react-icons/bs";
+
 export default function Home() {
   return (
     <main className="mt-20  bg-primary-white-100 ">
@@ -49,12 +49,13 @@ export default function Home() {
 
       {/* featured products */}
       <section className="px-3 md:px-6 lg:px-9 py-20 md:py-36 bg-gradient-black">
-        <div className="grid gap-10 maxWidthSection">
-          <h1
-            className={`text-left md:text-center font-bold text-2xl md:text-4xl mb-8 #B9B9B9 ${poppins.className}`}
-          >
-            Featured Projects
-          </h1>
+        <div className="maxWidthSection">
+        <h1
+          className={`text-left md:text-center font-bold text-2xl md:text-4xl mb-8 #B9B9B9 ${poppins.className}`}
+        >
+          Featured Projects
+        </h1>
+        <div className="grid gap-24 md:gap-12 ">
           {projects.map((project, index) => {
             return (
               <div key={index}>
@@ -69,7 +70,8 @@ export default function Home() {
               </div>
             );
           })}
-        </div>
+          </div>
+          </div>
       </section>
     </main>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import { BsArrowUpRightCircle } from "react-icons/bs";
 export const FeaturedProjects = ({
   image,
   name,
@@ -12,7 +12,13 @@ export const FeaturedProjects = ({
   return (
     <div className="grid gap-10 md:grid-cols-2 text-primary-white-100">
       <div>
-        <Image src={image} width={100} height={100} alt={name} className="w-[100%] h-[100%] object-contain" />
+        <Image
+          src={image}
+          width={100}
+          height={100}
+          alt={name}
+          className="w-[100%] h-[100%] object-contain"
+        />
       </div>
       <div className="space-y-4">
         <p
@@ -30,6 +36,10 @@ export const FeaturedProjects = ({
           Role: <span>{role}</span>
         </p>
         <p className="text-base md:text-lg">{description}</p>
+        <div className="pt-5 hidden md:block cursor-pointer">
+          
+          <BsArrowUpRightCircle className="text-5xl " />
+        </div>
       </div>
     </div>
   );
