@@ -57,7 +57,7 @@ export default function Home() {
           >
             Featured Projects
           </h1>
-          <div className="grid gap-24 md:gap-12 ">
+          <div className="grid gap-24 md:gap-40 ">
             {projects.map((project, index) => {
               return (
                 <div key={index}>
