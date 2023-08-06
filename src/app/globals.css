@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+
+@layer components {
+  .maxWidthSection {
+    @apply max-w-[1100px] m-auto;
+  }
+}
