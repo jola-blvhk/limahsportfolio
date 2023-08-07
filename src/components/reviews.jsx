@@ -9,8 +9,8 @@ export const Reviews = ({ name, image, description, role }) => {
         <h3 className="font-bold mt-2 ">{name}</h3>
         <p className="text-secondary-orange-100 text-[10px]">{role}</p>
       </div>
-      <div>
-        <p className="font-bold md:text-left">{description}</p>
+      <div className="">
+        <p className="font-bold text-xs md:text-base md:text-left">{description}</p>
       </div>
     </div>
   );
