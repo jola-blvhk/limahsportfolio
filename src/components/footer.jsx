@@ -15,7 +15,7 @@ export const Footer = () => {
         <h1
           className={`text-primary-black-100 ${poppins.className} text-3xl md:text-5xl`}
         >
-          Let's get to work
+          Let&apos;s get to work
         </h1>
         <p className="text-primary-black-90">
           Thanks for taking the time to check out my portfolio. I am more than
