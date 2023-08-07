@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Chinyere Asiegbu",
+    "role": "UI/UX DESIGNER AT EQUIPE TECHNIQUE",
+    "review": "‘’  I have worked with lape on various projects and i find that she is not just a good designer but also a fighter, always eager to take on more challenges to improve herself. She takes constructive criticism in good faith and also interprets feedback well ‘’",
+    "picture": "./reviews/casper.svg"
+  },
+  {
+    "id": "2",
+    "name": "Purevsuren Adiyasuren",
+    "role": "SNR ENGINEER",
+    "review": "‘’ I had the pleasure of collaborating with Ojuolape. She is an incredibly fast learner who is adept at evaluating feedback from engineers and quickly solving problems. She has a keen eye for aesthetics, and her ability to create beautiful, colorful UI designs is simply outstanding. Her designs effectively capture the gaming feel and are a testament to her skill and creativity ‘’",
+    "picture": "./reviews/purevsuren.svg"
+  },
+  {
+    "id": "3",
+    "name": "Tracy Loisel",
+    "role": "CEO EQUIPE TECHNIQUE",
+    "review": "‘’ Lape is a fighter, interpretes feedback very well ‘’",
+    "picture": "./reviews/tracy.svg"
+  }
+]

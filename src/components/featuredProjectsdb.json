@@ -5,7 +5,7 @@
     "year": "2023",
     "role": "Lead Product Designer, Ux Researcher",
     "description": "A technology for managing all your company's relationships and interactions with customers and potential customers. The goal is simple: Improve business relationships to grow your business.",
-    "image": "/featuredProducts/hardsands.jpg",
+    "image": "/featuredProducts/hardsands.svg",
     "slug": "",
     "status": "Ongoing"
   },
@@ -15,7 +15,7 @@
     "year": "2023",
     "role": "Lead Product Designer, Ux Researcher",
     "description": " NFTrace unlocks the power of digital collectibles with AR-powered platform. Connect with brands, businesses, and communities through real-world use cases and engage Gen Z like never before.",
-    "image": "/featuredProducts/nftgamification.jpg",
+    "image": "/featuredProducts/nftgamification.svg",
     "slug": "",
     "status": "Complete"
   },
@@ -25,7 +25,7 @@
     "year": "2022",
     "role": "Designer, Ux Researcher",
     "description": "Becomy is a Saas E-Commerce Tool for online businesses to sell their products with unique marketing strategies and a customizeable page builder.",
-    "image": "/featuredProducts/becomy.jpg",
+    "image": "/featuredProducts/becomy.svg",
     "slug": "",
     "status": "Ongoing"
   },
@@ -35,7 +35,7 @@
     "year": "2022",
     "role": "Designer, Ux Researcher",
     "description": "HolaBeauty is an  Edutech platform that offers a comprehensive range of tutorials and certifications in beauty and fashion.",
-    "image": "/featuredProducts/halabeauty.jpg",
+    "image": "/featuredProducts/halabeauty.svg",
     "slug": "",
     "status": "Ongoing"
   }

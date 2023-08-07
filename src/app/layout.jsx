@@ -3,7 +3,7 @@
 import "./globals.css";
 
 import { Poppins, Comfortaa } from "next/font/google";
-import { Header } from "../components/index";
+import { Header, Footer } from "../components/index";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className={`${comfortaa.className}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

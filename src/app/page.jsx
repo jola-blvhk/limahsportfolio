@@ -1,12 +1,19 @@
 "use client";
 
-import { Button, FeaturedProjects, CoreCompetence} from "@/components";
+import {
+  Button,
+  FeaturedProjects,
+  CoreCompetence,
+  Reviews,
+} from "@/components";
 import Image from "next/image";
 import Scroll from "../scroll.json";
 import Lottie from "lottie-react";
 import { poppins } from "../../utils/fonts";
 import projects from "../components/featuredProjectsdb.json";
-import competencies from "../components/coreCompetencies.json"
+import competencies from "../components/coreCompetencies.json";
+import reviews from "../components/reviews.json";
+
 export default function Home() {
   return (
     <main className="mt-20  bg-primary-white-100 ">
@@ -37,7 +44,7 @@ export default function Home() {
               className="hidden md:block w-60"
             />
           </div>
-          <div className="border  ">
+          <div className="">
             <Image
               src="/leader-image.svg"
               width={500}
@@ -88,13 +95,41 @@ export default function Home() {
             {competencies.map((skill, index) => {
               return (
                 <div key={index}>
-                  <CoreCompetence
-                    name={skill.name}
-                    image={skill.logo}
-                  />
+                  <CoreCompetence name={skill.name} image={skill.logo} />
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* reviews */}
+      <section className="pt-20 pb-20 md:pb-0  bg-primary-gray-100 relative">
+        <div className="absolute ">
+          <Image
+            className="relative  hidden md:block bottom-0 left-0 "
+            width={500}
+            height={500}
+            alt="hand gesture"
+            src="/handGesture.svg"
+          />
+        </div>
+        <div className="px-3 md:px-6 lg:px-9 ">
+          <div className="maxWidthSection  border-b-2 border-[rgba(71, 71, 71, 0.40);] py-20 md:py-30 ">
+            <div className="grid gap-10">
+              {reviews.map((review, index) => {
+                return (
+                  <div key={index} className="z-20 ">
+                    <Reviews
+                      name={review.name}
+                      role={review.role}
+                      description={review.review}
+                      image={review.picture}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
