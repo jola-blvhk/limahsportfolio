@@ -14,8 +14,9 @@ export const Header = () => {
   const navlist = ["About me", "Resumè"];
 
   return (
-    <div className="relative">
-      <div className="bg-primary-black-100 px-3 md:px-6 lg:px-9 h-20 md:h-auto pt-4  items-center fixed z-[1000000] top-0 w-full border">
+    <div className="relative z-50">
+    <div className="fixed w-full h-20 bg-primary-black-100  ">
+      <div className="h-20 px-3 md:px-6 lg:px-9 md:h-auto pt-4 absolute items-center z-[10000000000000] top-0 w-full ">
         <div
           className="flex justify-between items-center maxWidthSection text-primary-white-100
         "
@@ -116,28 +117,30 @@ export const Header = () => {
         </div>
       </div>
       {dropNav ? (
-        <div className="bg-primary-white-100 top-full shadow-md md:hidden w-full">
-          <ul>
+        <div className="bg-primary-white-100 top-full shadow-md md:hidden w-full overflow-hidden">
+          <ul className=" absolute top-full w-full bg-primary-white-100 z-[10000000000]">
             <Link href="/">
-              <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium border-b border-[#C3C3C366]">
+              <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium border-b border-[#C3C3C366]">
                 Home
               </li>
             </Link>
             {navlist.map((li, index) => (
               <Link key={index + 1} href={`/${li}`}>
-                <li className="text-primary-black-100 hover:text-secondary-orange-100  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 border-b border-[#C3C3C366] font-medium">
+                <li className="text-primary-black-100 hover:text-secondary-orange-100  hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 border-b border-[#C3C3C366] font-medium">
                   {li}
                 </li>
               </Link>
             ))}
             <Link href="/">
-              <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium">
+              <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium">
                 Mail me
               </li>
             </Link>
           </ul>
+          <div className="fixed top-[20%] bottom-0 left-0 right-0 z-[1000000000] bg-primary-black-100 opacity-60"></div>
         </div>
       ) : null}
-    </div>
+      </div>
+      </div>
   );
 };

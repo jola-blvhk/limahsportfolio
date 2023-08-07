@@ -16,7 +16,7 @@ import reviews from "../components/reviews.json";
 
 export default function Home() {
   return (
-    <main className="mt-20  bg-primary-white-100 ">
+    <main className=" bg-primary-white-100 pt-16">
       <section className="  px-3 md:px-6 lg:px-9 pt-20 pb-20 md:pb-0  bg-primary-gray-100">
         <div className=" grid gap-10 md:gap-0 md:flex maxWidthSection items-center lg:items-end ">
           <div className="space-y-6 order-last md:order-first md:w-[50%] ">
@@ -104,7 +104,8 @@ export default function Home() {
       </section>
 
       {/* reviews */}
-      <section className="pt-20 pb-20 md:pb-0  bg-primary-gray-100 relative">
+      <section className="pt-20 pb-20 md:pb-0  bg-primary-gray-100 ">
+        <div className="relative">
         <div className="absolute ">
           <Image
             className="relative  hidden md:block bottom-0 left-0 "
@@ -119,7 +120,7 @@ export default function Home() {
             <div className="grid gap-10">
               {reviews.map((review, index) => {
                 return (
-                  <div key={index} className="z-20 ">
+                  <div key={index} className="z-10">
                     <Reviews
                       name={review.name}
                       role={review.role}
@@ -131,7 +132,8 @@ export default function Home() {
               })}
             </div>
           </div>
-        </div>
+          </div>
+          </div>
       </section>
     </main>
   );
