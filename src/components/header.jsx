@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 export const Header = () => {
   const [dropNav, setDropNav] = useState(false);
@@ -15,132 +16,147 @@ export const Header = () => {
 
   return (
     <div className="relative z-50">
-    <div className="fixed w-full h-20 bg-primary-black-100  ">
-      <div className="h-20 px-3 md:px-6 lg:px-9 md:h-auto pt-4 absolute items-center z-[10000000000000] top-0 w-full ">
-        <div
-          className="flex justify-between items-center maxWidthSection text-primary-white-100
+      <div className="fixed w-full h-20 bg-primary-black-100  ">
+        <div className="h-20 px-3 md:px-6 lg:px-9 md:h-auto pt-4 absolute items-center z-[10000000000000] top-0 w-full ">
+          <div
+            className="flex justify-between items-center maxWidthSection text-primary-white-100
         "
-        >
-          <div>
-            <Image
-              src="/portfolioLogo.svg"
-              width={50}
-              height={50}
-              alt="portfolio-logo"
-              className="w-10 h-10"
-            />
-          </div>
-          <div className="hidden md:block ">
-            <ul className="flex gap-20 ">
-              <Link
-                href="/"
-                className={`grid place-items-center 
+          >
+            <div>
+              <Image
+                src="/portfolioLogo.svg"
+                width={50}
+                height={50}
+                alt="portfolio-logo"
+                className="w-10 h-10"
+              />
+            </div>
+            <div className="hidden md:block ">
+              <ul className="flex gap-20 ">
+                <Link
+                  href="/"
+                  className={`grid place-items-center 
               `}
-                onMouseEnter={() => setShowHoverHome(true)}
-                onMouseLeave={() => setShowHoverHome(false)}
-              >
-                <div className="relative">
-                  <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
-                    Home
-                  </li>
-                  {showHoverHome ? (
-                    <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              </Link>
+                  onMouseEnter={() => setShowHoverHome(true)}
+                  onMouseLeave={() => setShowHoverHome(false)}
+                >
+                  <div className="relative">
+                    <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
+                      Home
+                    </li>
+                    {showHoverHome ? (
+                      <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </Link>
 
-              <Link
-                href="/"
-                className={`grid place-items-center 
+                <Link
+                  href="/"
+                  className={`grid place-items-center 
               `}
-                onMouseEnter={() => setShowHoverAbout(true)}
-                onMouseLeave={() => setShowHoverAbout(false)}
-              >
-                <div className="relative">
-                  <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
-                    About Me
-                  </li>
-                  {showHoverAbout ? (
-                    <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              </Link>
-              <Link
-                href="/"
-                className={`grid place-items-center 
+                  onMouseEnter={() => setShowHoverAbout(true)}
+                  onMouseLeave={() => setShowHoverAbout(false)}
+                >
+                  <div className="relative">
+                    <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
+                      About Me
+                    </li>
+                    {showHoverAbout ? (
+                      <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </Link>
+                <Link
+                  href="/"
+                  className={`grid place-items-center 
               `}
-                onMouseEnter={() => setShowHoverResume(true)}
-                onMouseLeave={() => setShowHoverResume(false)}
-              >
-                <div className="relative grid ">
-                  <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
-                    Resumè
-                  </li>
-                  {showHoverResume ? (
-                    <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              </Link>
-            </ul>
-          </div>
-          <div className=" hidden md:block">
-            <Image
-              src="/mail.svg"
-              width={50}
-              height={50}
-              alt="mail"
-              className="w-8 h-8"
-              onClick={() => {
-                setDropNav(!dropNav);
-              }}
-            />
-          </div>
-          {/* Mobile Nav */}
-          <div className="md:hidden">
-            <Image
-              src="/toggleNav.svg"
-              width={50}
-              height={50}
-              alt="toggle-nav"
-              className="w-8 h-8 "
-              onClick={() => {
-                setDropNav(!dropNav);
-              }}
-            />
+                  onMouseEnter={() => setShowHoverResume(true)}
+                  onMouseLeave={() => setShowHoverResume(false)}
+                >
+                  <div className="relative grid ">
+                    <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
+                      Resumè
+                    </li>
+                    {showHoverResume ? (
+                      <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </Link>
+              </ul>
+            </div>
+            <div className=" hidden md:block">
+              <Image
+                src="/mail.svg"
+                width={50}
+                height={50}
+                alt="mail"
+                className="w-8 h-8"
+                onClick={() => {
+                  setDropNav(!dropNav);
+                }}
+              />
+            </div>
+            {/* Mobile Nav */}
+
+            <div className="md:hidden">
+              {dropNav ? (
+                <IoMdClose
+                  className="text-4xl"
+                  onClick={() => {
+                    setDropNav(false);
+                  }}
+                />
+              ) : (
+                <Image
+                  src="/toggleNav.svg"
+                  width={50}
+                  height={50}
+                  alt="toggle-nav"
+                  className="w-8 h-8 "
+                  onClick={() => {
+                    setDropNav(true);
+                  }}
+                />
+              )}
+            </div>
           </div>
         </div>
-      </div>
-      {dropNav ? (
-        <div className="bg-primary-white-100 top-full shadow-md md:hidden w-full overflow-hidden">
-          <ul className=" absolute top-full w-full bg-primary-white-100 z-[10000000000]">
-            <Link href="/">
-              <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium border-b border-[#C3C3C366]">
-                Home
-              </li>
-            </Link>
-            {navlist.map((li, index) => (
-              <Link key={index + 1} href={`/${li}`}>
-                <li className="text-primary-black-100 hover:text-secondary-orange-100  hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 border-b border-[#C3C3C366] font-medium">
-                  {li}
+        {dropNav ? (
+          <div className="bg-primary-white-100 top-full shadow-md md:hidden w-full overflow-hidden">
+            <ul className=" absolute top-full w-full bg-primary-white-100 z-[10000000000]">
+              <Link href="/">
+                <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium border-b border-[#C3C3C366]">
+                  Home
                 </li>
               </Link>
-            ))}
-            <Link href="/">
-              <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium">
-                Mail me
-              </li>
-            </Link>
-          </ul>
-          <div className="fixed top-[20%] bottom-0 left-0 right-0 z-[1000000000] bg-primary-black-100 opacity-60"></div>
-        </div>
-      ) : null}
+              {navlist.map((li, index) => (
+                <Link key={index + 1} href={`/${li}`}>
+                  <li className="text-primary-black-100 hover:text-secondary-orange-100  hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 border-b border-[#C3C3C366] font-medium">
+                    {li}
+                  </li>
+                </Link>
+              ))}
+              <Link href="/">
+                <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium">
+                  Mail me
+                </li>
+              </Link>
+            </ul>
+            <div
+              className="fixed top-[20%] bottom-0 left-0 right-0 z-[1000000000] bg-primary-black-100 opacity-60"
+              onClick={() => {
+                setDropNav(false);
+              }}
+            ></div>
+          </div>
+        ) : null}
       </div>
-      </div>
+    </div>
   );
 };
