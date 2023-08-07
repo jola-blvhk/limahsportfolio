@@ -15,7 +15,7 @@ export const Header = () => {
 
   return (
     <div className="">
-      <div className="bg-primary-black-100 px-3 md:px-6 lg:px-9  pt-4 h-20 items-center fixed z-[1000000] top-0 w-full">
+      <div className="bg-primary-black-100 px-3 md:px-6 lg:px-9  pt-4  items-center fixed z-[1000000] top-0 w-full">
         <div
           className="flex justify-between items-center maxWidthSection text-primary-white-100
         "
@@ -38,14 +38,16 @@ export const Header = () => {
                 onMouseEnter={() => setShowHoverHome(true)}
                 onMouseLeave={() => setShowHoverHome(false)}
               >
-                <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
-                  Home
-                </li>
-                {showHoverHome ? (
-                  <div className="w-12 h-[3px] bg-secondary-orange-100"></div>
-                ) : (
-                  ""
-                )}
+                <div className="relative">
+                  <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
+                    Home
+                  </li>
+                  {showHoverHome ? (
+                    <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </Link>
 
               <Link
@@ -55,14 +57,16 @@ export const Header = () => {
                 onMouseEnter={() => setShowHoverAbout(true)}
                 onMouseLeave={() => setShowHoverAbout(false)}
               >
-                <li className=" hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium">
-                  About me
-                </li>
-                {showHoverAbout ? (
-                  <div className="w-12 h-[3px] bg-secondary-orange-100"></div>
-                ) : (
-                  ""
-                )}
+                <div className="relative">
+                  <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
+                    About Me
+                  </li>
+                  {showHoverAbout ? (
+                    <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </Link>
               <Link
                 href="/"
@@ -71,14 +75,16 @@ export const Header = () => {
                 onMouseEnter={() => setShowHoverResume(true)}
                 onMouseLeave={() => setShowHoverResume(false)}
               >
-                <li className=" hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium">
-                  Resumè
-                </li>
-                {showHoverResume ? (
-                  <div className="w-12 h-[3px] bg-secondary-orange-100"></div>
-                ) : (
-                  ""
-                )}
+                <div className="relative grid ">
+                  <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
+                    Resumè
+                  </li>
+                  {showHoverResume ? (
+                    <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </Link>
             </ul>
           </div>
