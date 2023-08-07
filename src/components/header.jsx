@@ -16,7 +16,10 @@ export const Header = () => {
   return (
     <div className="">
       <div className="bg-primary-black-100 px-3 md:px-6 lg:px-9  pt-4 h-20 items-center fixed z-[1000000] top-0 w-full">
-        <div className="flex justify-between items-center maxWidthSection ">
+        <div
+          className="flex justify-between items-center maxWidthSection text-primary-white-100
+        "
+        >
           <div>
             <Image
               src="/portfolioLogo.svg"
@@ -107,7 +110,7 @@ export const Header = () => {
         </div>
       </div>
       {dropNav ? (
-        <div className="bg-primary-white-100 z-[100000] top-full mt-16 shadow-md md:hidden">
+        <div className="bg-primary-white-100  top-full mt-16 shadow-md md:hidden ">
           <ul>
             <Link href="/">
               <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium border-b border-[#C3C3C366]">
