@@ -55,7 +55,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <section className="py-8 md:py-20 lg:py-24">
+        <section className="pt-16 pb-8 md:py-20 lg:py-24">
           <h1
             className={`maxWidthSection text-primary-gray-90 text-left md:text-center ${poppins.className} text-3xl md:text-5xl `}
           >
