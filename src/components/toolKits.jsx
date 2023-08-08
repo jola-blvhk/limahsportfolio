@@ -48,10 +48,7 @@ export const ToolKit = () => {
         autoplay={{
           delay: 2000,
         }}
-        //   spaceBetween={50}
-        //   slidesPerView={3}
-        //   onSlideChange={() => console.log("slide change")}
-        //   onSwiper={(swiper) => console.log(swiper)}
+       
       >
         <SwiperSlide>
           <div className="grid place-items-center text-xs md:text-base ">

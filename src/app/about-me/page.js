@@ -6,7 +6,7 @@ import afterEffects from "../../../public/toolKit/adobeAfterEffects.svg";
 import adobeIllustrator from "../../../public/toolKit/adobeIllustrator.svg";
 import figma from "../../../public/toolKit/figma.svg";
 import spline from "../../../public/toolKit/spline.svg";
-import competencies from "../../components/coreCompetencies.json"
+import competencies from "../../components/coreCompetencies.json";
 import xdLogo from "../../../public/toolKit/xdLogo.svg";
 
 const AboutMe = () => {
@@ -51,7 +51,7 @@ const AboutMe = () => {
               <br /> Last but not least, my background in animation adds an
               additional level of interaction and engagement, bringing concepts
               to life and creating a more engaging user experience. I have
-              proven over my career that I can collaborate with crossfunctional
+              proven over my career that I can collaborate with cross functional
               teams to create creative and efficient design solutions that serve
               organizational goals. I'm dedicated to keeping up with the most
               recent design approaches and trends, and I'm constantly seeking
@@ -66,58 +66,7 @@ const AboutMe = () => {
           >
             Tool Kit
           </h1>
-          {/* <div className="flex justify-between maxWidthSection gap-10 md:gap-16 lg:gap-20 py-10 md:py-16">
-            <div className="grid place-items-center text-xs md:text-base ">
-              <Image
-                src={figma}
-                width={100}
-                height={100}
-                alt="figma"
-                className="w-[100%] h-[100%] object-contain"
-              />
-              <p>Figma</p>
-            </div>
-            <div className="grid place-items-center text-xs md:text-base">
-              <Image
-                src={afterEffects}
-                width={100}
-                height={100}
-                alt="after Effect"
-                className="w-[100%] h-[100%] object-contain"
-              />
-              <p>After Effect</p>
-            </div>
-            <div className="grid place-items-center text-xs md:text-base">
-              <Image
-                src={xdLogo}
-                width={100}
-                height={100}
-                alt="adobe xd"
-                className="w-[100%] h-[100%] object-contain"
-              />
-              <p>Adobe Xd</p>
-            </div>
-            <div className="grid place-items-center text-xs md:text-base">
-              <Image
-                src={adobeIllustrator}
-                width={100}
-                height={100}
-                alt="adobe Illustrator"
-                className="w-[100%] h-[100%] object-contain"
-              />
-              <p>Adobe Illustrator</p>
-            </div>
-            <div className="grid place-items-center text-xs md:text-base">
-              <Image
-                src={spline}
-                width={100}
-                height={100}
-                alt="spline"
-                className="w-[100%] h-[100%] object-contain"
-              />
-              <p>Spline 3D</p>
-            </div>
-          </div> */}
+
           <ToolKit />
         </section>
 

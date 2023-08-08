@@ -104,7 +104,7 @@ export default function Home() {
       </section>
 
       {/* reviews */}
-      <section className="pt-20    bg-primary-gray-100 ">
+      <section className="pt-20   bg-primary-gray-100 ">
         <div className="relative">
           <div className="absolute ">
             <Image
