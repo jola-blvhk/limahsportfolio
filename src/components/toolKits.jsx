@@ -52,7 +52,7 @@ export const ToolKit = () => {
         }}
       >
         <SwiperSlide>
-          <div className="grid place-items-center text-sm md:text-base ">
+          <div className="grid place-items-center text-sm text-center md:text-base ">
             <Image
               src={figma}
               width={100}
@@ -64,7 +64,7 @@ export const ToolKit = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid place-items-center text-sm md:text-base">
+          <div className="grid place-items-center text-sm text-center md:text-base">
             <Image
               src={afterEffects}
               width={100}
@@ -76,7 +76,7 @@ export const ToolKit = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid place-items-center text-sm md:text-base">
+          <div className="grid place-items-center text-sm  text-center md:text-base">
             <Image
               src={xdLogo}
               width={100}
@@ -88,7 +88,7 @@ export const ToolKit = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid place-items-center text-sm md:text-base">
+          <div className="grid place-items-center text-sm text-center md:text-base">
             <Image
               src={adobeIllustrator}
               width={100}
@@ -100,7 +100,7 @@ export const ToolKit = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="grid place-items-center">
-          <div className="grid place-items-center text-sm md:text-base">
+          <div className="grid place-items-center text-sm text-center md:text-base">
             <Image
               src={spline}
               width={100}
