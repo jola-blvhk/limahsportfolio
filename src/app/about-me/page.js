@@ -65,7 +65,7 @@ const AboutMe = () => {
           <ToolKit />
         </section>
 
-        {/* core competence */}
+        {/* core competence   */}
         <section className=" ">
           <div className="maxWidthSection  pb-20 md:pb-32">
             <h1
