@@ -2,12 +2,7 @@ import React from "react";
 import { poppins } from "../../../utils/fonts";
 import Image from "next/image";
 import { CoreCompetence, ToolKit } from "@/components";
-import afterEffects from "../../../public/toolKit/adobeAfterEffects.svg";
-import adobeIllustrator from "../../../public/toolKit/adobeIllustrator.svg";
-import figma from "../../../public/toolKit/figma.svg";
-import spline from "../../../public/toolKit/spline.svg";
 import competencies from "../../components/coreCompetencies.json";
-import xdLogo from "../../../public/toolKit/xdLogo.svg";
 
 const AboutMe = () => {
   return (
@@ -53,9 +48,9 @@ const AboutMe = () => {
               to life and creating a more engaging user experience. I have
               proven over my career that I can collaborate with cross functional
               teams to create creative and efficient design solutions that serve
-              organizational goals. I'm dedicated to keeping up with the most
-              recent design approaches and trends, and I'm constantly seeking
-              for ways to sharpen my abilities.
+              organizational goals. I&apos;m dedicated to keeping up with the
+              most recent design approaches and trends, and I&apos;m constantly
+              seeking for ways to sharpen my abilities.
             </p>
           </div>
         </div>

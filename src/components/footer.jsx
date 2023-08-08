@@ -30,19 +30,19 @@ export const Footer = () => {
         />
         <div className="flex items-center justify-center space-x-8 m-auto md:pt-8 ">
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={Instagram} width={40} height={40} />
+            <Image src={Instagram} width={40} height={40} alt="instagram" />
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={twitter} width={40} height={40} />
+            <Image src={twitter} width={40} height={40} alt="twitter"/>
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={behance} width={40} height={40} />
+            <Image src={behance} width={40} height={40} alt="behance"/>
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={dribbble} width={40} height={40} />
+            <Image src={dribbble} width={40} height={40} alt="dribble"/>
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={linkedin} width={40} height={40} />
+            <Image src={linkedin} width={40} height={40} alt="linkedin"/>
           </Link>
           {/* <BiLogoTwitter className="text-primary-black-100 text-3xl md:text-5xl" />
           <BiLogoInstagram className="text-primary-black-100 text-3xl md:text-5xl" />
