@@ -106,34 +106,34 @@ export default function Home() {
       {/* reviews */}
       <section className="pt-20 pb-20 md:pb-0  bg-primary-gray-100 ">
         <div className="relative">
-        <div className="absolute ">
-          <Image
-            className="relative  hidden md:block bottom-0 left-0 "
-            width={500}
-            height={500}
-            alt="hand gesture"
-            src="/handGesture.svg"
-          />
-        </div>
-        <div className="px-3 md:px-6 lg:px-9 ">
-          <div className="maxWidthSection  border-b-2 border-[rgba(71, 71, 71, 0.40);] py-20 md:py-30 ">
-            <div className="grid gap-10">
-              {reviews.map((review, index) => {
-                return (
-                  <div key={index} className="z-10">
-                    <Reviews
-                      name={review.name}
-                      role={review.role}
-                      description={review.review}
-                      image={review.picture}
-                    />
-                  </div>
-                );
-              })}
+          <div className="absolute ">
+            <Image
+              className="relative  hidden md:block bottom-0 left-0 "
+              width={500}
+              height={500}
+              alt="hand gesture"
+              src="/handGesture.svg"
+            />
+          </div>
+          <div className="px-3 md:px-6 lg:px-9 ">
+            <div className="maxWidthSection  border-b-2 border-[rgba(71, 71, 71, 0.40);] py-20 md:py-30 ">
+              <div className="grid gap-10">
+                {reviews.map((review, index) => {
+                  return (
+                    <div key={index} className="z-10">
+                      <Reviews
+                        name={review.name}
+                        role={review.role}
+                        description={review.review}
+                        image={review.picture}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
-          </div>
-          </div>
+        </div>
       </section>
     </main>
   );
