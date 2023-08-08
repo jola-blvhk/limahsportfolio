@@ -42,7 +42,7 @@ export const ToolKit = () => {
   SwiperCore.use([Autoplay]);
 
   return (
-    <div className="  maxWidthSection  md:gap-16 lg:gap-20 py-10 md:py-16 text-white-100">
+    <div className="  maxWidthSection  md:gap-16 lg:gap-20 py-10 md:py-16 text-primary-white-100">
       <Swiper
         spaceBetween={30}
         slidesPerView={logosPerPage}
