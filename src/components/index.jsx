@@ -4,3 +4,4 @@ export * from "./featuredProjects.jsx";
 export * from "./coreCompetence.jsx";
 export * from "./reviews.jsx";
 export * from './footer.jsx'
+export * from './toolKits.jsx'

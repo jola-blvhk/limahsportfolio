@@ -65,7 +65,7 @@ export default function Home() {
             Featured Projects
           </h1>
           <div className="grid gap-24 md:gap-40 ">
-            {projects.map((project, index) => {
+            {projects?.map((project, index) => {
               return (
                 <div key={index}>
                   <FeaturedProjects
@@ -92,7 +92,7 @@ export default function Home() {
             Core Competencies
           </h1>
           <div className="grid md:grid-cols-2 gap-y-10 md:gap-x-20 ">
-            {competencies.map((skill, index) => {
+            {competencies?.map((skill, index) => {
               return (
                 <div key={index}>
                   <CoreCompetence name={skill.name} image={skill.logo} />
@@ -104,7 +104,7 @@ export default function Home() {
       </section>
 
       {/* reviews */}
-      <section className="pt-20 pb-20 md:pb-0  bg-primary-gray-100 ">
+      <section className="pt-20    bg-primary-gray-100 ">
         <div className="relative">
           <div className="absolute ">
             <Image
@@ -118,7 +118,7 @@ export default function Home() {
           <div className="px-3 md:px-6 lg:px-9 ">
             <div className="maxWidthSection  border-b-2 border-[rgba(71, 71, 71, 0.40);] py-20 md:py-30 ">
               <div className="grid gap-10">
-                {reviews.map((review, index) => {
+                {reviews?.map((review, index) => {
                   return (
                     <div key={index} className="z-10">
                       <Reviews

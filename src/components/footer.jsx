@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from ".";
 import { poppins } from "../../utils/fonts";
-import { BiLogoInstagram, BiLogoTwitter, BiLogoLinkedin } from "react-icons/bi";
+
 import Image from "next/image";
 import Instagram from "../../public/socialMedia/instagram.svg";
 import linkedin from "../../public/socialMedia/linkedin.svg";
@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary-gray-100  px-3 md:px-6 lg:px-9 pb-6">
+    <footer className="bg-primary-gray-100 pt-20 px-3 md:px-6 lg:px-9 pb-6">
       <div className="text-center  m-auto max-w-lg space-y-14  md:pt-16 ">
         <h1
           className={`text-primary-black-100 ${poppins.className} text-3xl md:text-5xl `}

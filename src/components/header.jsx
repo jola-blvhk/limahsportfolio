@@ -12,7 +12,7 @@ export const Header = () => {
   const [showHoverHome, setShowHoverHome] = useState(false);
   const [showHoverAbout, setShowHoverAbout] = useState(false);
   const [showHoverResume, setShowHoverResume] = useState(false);
-  const navlist = ["About me", "Resumè"];
+
 
   return (
     <div className="relative z-50">
@@ -53,7 +53,7 @@ export const Header = () => {
                 </Link>
 
                 <Link
-                  href="/"
+                  href="/about-me"
                   className={`grid place-items-center 
               `}
                   onMouseEnter={() => setShowHoverAbout(true)}
@@ -130,19 +130,43 @@ export const Header = () => {
         {dropNav ? (
           <div className="bg-primary-white-100 top-full shadow-md md:hidden w-full overflow-hidden">
             <ul className=" absolute top-full w-full bg-primary-white-100 z-[10000000000]">
-              <Link href="/">
+              <Link
+                href="/"
+                onClick={() => {
+                  setDropNav(false);
+                }}
+              >
                 <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium border-b border-[#C3C3C366]">
                   Home
                 </li>
               </Link>
-              {navlist.map((li, index) => (
-                <Link key={index + 1} href={`/${li}`}>
-                  <li className="text-primary-black-100 hover:text-secondary-orange-100  hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 border-b border-[#C3C3C366] font-medium">
-                    {li}
-                  </li>
-                </Link>
-              ))}
-              <Link href="/">
+              <Link
+                href="/about-me"
+                onClick={() => {
+                  setDropNav(false);
+                }}
+              >
+                <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium border-b border-[#C3C3C366]">
+                  About me
+                </li>
+              </Link>
+              <Link
+                href="/resume"
+                onClick={() => {
+                  setDropNav(false);
+                }}
+              >
+                <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium border-b border-[#C3C3C366]">
+                  Resumè
+                </li>
+              </Link>
+
+              <Link
+                href="/"
+                onClick={() => {
+                  setDropNav(false);
+                }}
+              >
                 <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium">
                   Mail me
                 </li>
