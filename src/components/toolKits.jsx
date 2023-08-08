@@ -4,7 +4,9 @@ import React, { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import SwiperCore, { Autoplay } from "swiper";
+import SwiperCore from "swiper";
+import { Autoplay } from "swiper/modules";
+
 import Image from "next/image";
 import afterEffects from "../../public/toolKit/adobeAfterEffects.svg";
 import adobeIllustrator from "../../public/toolKit/adobeIllustrator.svg";
@@ -40,7 +42,7 @@ export const ToolKit = () => {
   SwiperCore.use([Autoplay]);
 
   return (
-    <div className="  maxWidthSection  md:gap-16 lg:gap-20 py-10 md:py-16">
+    <div className="  maxWidthSection  md:gap-16 lg:gap-20 py-10 md:py-16 text-white-100">
       <Swiper
         spaceBetween={30}
         slidesPerView={logosPerPage}
@@ -48,7 +50,6 @@ export const ToolKit = () => {
         autoplay={{
           delay: 2000,
         }}
-       
       >
         <SwiperSlide>
           <div className="grid place-items-center text-xs md:text-base ">

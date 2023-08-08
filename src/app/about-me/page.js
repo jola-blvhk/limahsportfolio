@@ -23,7 +23,7 @@ const AboutMe = () => {
             </h1>
           </div>
           <div className="md:w-[70%]">
-            <p className=" text-[15px] md:text-lg">
+            <p className=" text-[15px] md:text-lg text-primary-white-100">
               I am a multidisciplinary designer and researcher focused on
               building meaningful digital products and experiences. i am also a
               certified Product manager. <br />
