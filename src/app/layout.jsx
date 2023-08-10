@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Script
+          id="hotjar"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function (h, o, t, j, a, r) {
