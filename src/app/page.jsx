@@ -16,7 +16,6 @@ import reviews from "../components/reviews.json";
 import Link from "next/link";
 import { useEffect } from "react";
 import Head from "next/head";
-import {NextHead}
 
 export default function Home() {
   const scrollToBottom = () => {
@@ -43,7 +42,7 @@ export default function Home() {
       <!-- End Hotjar Tracking Code -->
     `;
 
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.appendChild(document.createTextNode(hotjarTrackingCode));
     document.head.appendChild(script);
   }, []);
