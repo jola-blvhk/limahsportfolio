@@ -13,9 +13,7 @@ import Link from "next/link";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer
-      className="bg-primary-gray-100 pt-20 px-3 md:px-6 lg:px-9 pb-6"
-    >
+    <footer className="bg-primary-gray-100 pt-20 px-3 md:px-6 lg:px-9 pb-6">
       <div className="text-center  m-auto max-w-lg space-y-14  md:pt-16 ">
         <h1
           className={`text-primary-black-100 ${poppins.className} text-3xl md:text-5xl `}
@@ -28,27 +26,27 @@ export const Footer = () => {
           feel free to reach out to me any time.
         </p>
         <div className="m-auto">
-          <Link href="mailto:ojuolapebello99@gmail.com">
+          <a href="mailto:ojuolapebello99@gmail.com">
             <Button
               text="Send me an Email"
               classN=" text-sm md:text-base bg-secondary-orange-100 border-secondary-orange-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-secondary-orange-100 m-auto hover:font-bold"
             />
-          </Link>
+          </a>
         </div>
         <div className="flex items-center justify-center space-x-8 m-auto md:pt-8 ">
           <Link href="https://www.instagram.com/_ojuolape_/">
             <Image src={Instagram} width={40} height={40} alt="instagram" />
           </Link>
-          <Link href="https://www.instagram.com/_ojuolape_/">
+          <Link href="https://twitter.com/uxbabe?s=21">
             <Image src={twitter} width={40} height={40} alt="twitter" />
           </Link>
-          <Link href="https://www.instagram.com/_ojuolape_/">
+          <Link href="https://www.behance.net/ojuolapebello">
             <Image src={behance} width={40} height={40} alt="behance" />
           </Link>
-          <Link href="https://www.instagram.com/_ojuolape_/">
+          <Link href="https://dribbble.com/llimmahhh">
             <Image src={dribbble} width={40} height={40} alt="dribble" />
           </Link>
-          <Link href="https://www.instagram.com/_ojuolape_/">
+          <Link href="https://www.linkedin.com/in/bello-ojuolape/">
             <Image src={linkedin} width={40} height={40} alt="linkedin" />
           </Link>
           {/* <BiLogoTwitter className="text-primary-black-100 text-3xl md:text-5xl" />

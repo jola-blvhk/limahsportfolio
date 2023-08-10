@@ -10,7 +10,6 @@ import path from "path";
 export const Header = () => {
   const pathName = usePathname();
 
-
   const [dropNav, setDropNav] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
   const [showHoverHome, setShowHoverHome] = useState(false);
@@ -94,7 +93,7 @@ export const Header = () => {
               </ul>
             </div>
             <div className=" hidden md:block">
-              <Link href="mailto:ojuolapebello99@gmail.com">
+              <a href="mailto:ojuolapebello99@gmail.com">
                 <Image
                   src="/mail.svg"
                   width={50}
@@ -105,7 +104,7 @@ export const Header = () => {
                     setDropNav(!dropNav);
                   }}
                 />
-              </Link>
+              </a>
             </div>
             {/* Mobile Nav */}
 
@@ -132,6 +131,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
+
         {dropNav ? (
           <div className="bg-primary-white-100 top-full shadow-md md:hidden w-full overflow-hidden">
             <ul className=" absolute top-full w-full bg-primary-white-100 z-[10000000000]">
@@ -166,7 +166,7 @@ export const Header = () => {
                 </li>
               </Link>
 
-              <Link
+              <a
                 href="mailto:ojuolapebello99@gmail.com"
                 onClick={() => {
                   setDropNav(false);
@@ -175,7 +175,7 @@ export const Header = () => {
                 <li className="text-primary-black-100 hover:text-secondary-orange-100 hover:cursor-pointer transition ease-in-out delay-150 text-center py-8 font-medium">
                   Mail me
                 </li>
-              </Link>
+              </a>
             </ul>
             <div
               className="fixed top-[20%] bottom-0 left-0 right-0 z-[1000000000] bg-primary-black-100 opacity-60"

@@ -44,12 +44,12 @@ export default function Home() {
               background in Architecture. I am also a certified Product manager
             </p>
             <div>
-              <Link href="mailto:ojuolapebello99@gmail.com">
+              <a href="mailto:ojuolapebello99@gmail.com">
                 <Button
                   text="Hire me"
                   classN="bg-primary-black-100 border border-primary-black-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-primary-black-100 hover:font-bold"
                 />
-              </Link>
+              </a>
             </div>
 
             <Lottie
