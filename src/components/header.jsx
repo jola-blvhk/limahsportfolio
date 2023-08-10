@@ -13,7 +13,6 @@ export const Header = () => {
   const [showHoverAbout, setShowHoverAbout] = useState(false);
   const [showHoverResume, setShowHoverResume] = useState(false);
 
-
   return (
     <div className="relative z-50">
       <div className="fixed w-full h-20 bg-primary-black-100  ">
@@ -91,16 +90,18 @@ export const Header = () => {
               </ul>
             </div>
             <div className=" hidden md:block">
-              <Image
-                src="/mail.svg"
-                width={50}
-                height={50}
-                alt="mail"
-                className="w-8 h-8"
-                onClick={() => {
-                  setDropNav(!dropNav);
-                }}
-              />
+              <Link href="mailto:ojuolapebello99@gmail.com">
+                <Image
+                  src="/mail.svg"
+                  width={50}
+                  height={50}
+                  alt="mail"
+                  className="w-8 h-8 hover:text-secondary-orange-100"
+                  onClick={() => {
+                    setDropNav(!dropNav);
+                  }}
+                />
+              </Link>
             </div>
             {/* Mobile Nav */}
 
@@ -162,7 +163,7 @@ export const Header = () => {
               </Link>
 
               <Link
-                href="/"
+                href="mailto:ojuolapebello99@gmail.com"
                 onClick={() => {
                   setDropNav(false);
                 }}

@@ -11,6 +11,7 @@ import dribbble from "../../public/socialMedia/dribbble.svg";
 import Link from "next/link";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-primary-gray-100 pt-20 px-3 md:px-6 lg:px-9 pb-6">
       <div className="text-center  m-auto max-w-lg space-y-14  md:pt-16 ">
@@ -24,25 +25,29 @@ export const Footer = () => {
           happy to answer any questions or discuss new opportunities so please
           feel free to reach out to me any time.
         </p>
-        <Button
-          text="Send me an Email"
-          classN=" text-sm md:text-base bg-secondary-orange-100 border-secondary-orange-100 text-primary-white-100 m-auto"
-        />
+        <div className="m-auto">
+          <Link href="mailto:ojuolapebello99@gmail.com">
+            <Button
+              text="Send me an Email"
+              classN=" text-sm md:text-base bg-secondary-orange-100 border-secondary-orange-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-secondary-orange-100 m-auto"
+            />
+          </Link>
+        </div>
         <div className="flex items-center justify-center space-x-8 m-auto md:pt-8 ">
           <Link href="https://www.instagram.com/_ojuolape_/">
             <Image src={Instagram} width={40} height={40} alt="instagram" />
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={twitter} width={40} height={40} alt="twitter"/>
+            <Image src={twitter} width={40} height={40} alt="twitter" />
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={behance} width={40} height={40} alt="behance"/>
+            <Image src={behance} width={40} height={40} alt="behance" />
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={dribbble} width={40} height={40} alt="dribble"/>
+            <Image src={dribbble} width={40} height={40} alt="dribble" />
           </Link>
           <Link href="https://www.instagram.com/_ojuolape_/">
-            <Image src={linkedin} width={40} height={40} alt="linkedin"/>
+            <Image src={linkedin} width={40} height={40} alt="linkedin" />
           </Link>
           {/* <BiLogoTwitter className="text-primary-black-100 text-3xl md:text-5xl" />
           <BiLogoInstagram className="text-primary-black-100 text-3xl md:text-5xl" />
@@ -52,7 +57,7 @@ export const Footer = () => {
       </div>
       <div className="text-center pt-28 md:pt-16 font-bold">
         <p className="text-primary-black-100 text-xs ">
-          © 2021 All rights reserved. – Designed by me Ojuolape Bello
+          © {currentYear} All rights reserved. – Designed by me Ojuolape Bello
         </p>
       </div>
     </footer>
