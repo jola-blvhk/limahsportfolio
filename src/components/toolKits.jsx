@@ -50,63 +50,64 @@ export const ToolKit = () => {
         autoplay={{
           delay: 2000,
         }}
+        className="my-auto"
       >
-        <SwiperSlide>
+        <SwiperSlide className="my-auto">
           <div className="grid place-items-center text-sm text-center md:text-base ">
             <Image
               src={figma}
               width={100}
               height={100}
               alt="figma"
-              className="w-[100%] h-[100%] object-contain"
+              className="w-20 h-full md:w-32 object-contain"
             />
             <p>Figma</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="my-auto">
           <div className="grid place-items-center text-sm text-center md:text-base">
             <Image
               src={afterEffects}
               width={100}
               height={100}
               alt="after Effect"
-              className="w-[100%] h-[100%] object-contain"
+              className="w-20 h-full  md:w-32  object-contain"
             />
             <p>After Effect</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="my-auto">
           <div className="grid place-items-center text-sm  text-center md:text-base">
             <Image
               src={xdLogo}
               width={100}
               height={100}
               alt="adobe xd"
-              className="w-[100%] h-[100%] object-contain"
+              className="w-20 h-full md:w-32   object-contain"
             />
             <p>Adobe Xd</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="my-auto">
           <div className="grid place-items-center text-sm text-center md:text-base">
             <Image
               src={adobeIllustrator}
               width={100}
               height={100}
               alt="adobe Illustrator"
-              className="w-[100%] h-[100%] object-contain"
+              className="w-20 h-[100%] md:w-32   object-contain"
             />
             <p>Adobe Illustrator</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="grid place-items-center">
-          <div className="grid place-items-center text-sm text-center md:text-base">
+        <SwiperSlide className="my-auto">
+          <div className="grid place-items-center  text-sm text-center md:text-base ">
             <Image
               src={spline}
               width={100}
               height={100}
               alt="spline"
-              className="w-[100%] h-[100%] object-contain"
+              className="w-32 h-full  md:w-32  object-contain"
             />
             <p>Spline 3D</p>
           </div>
