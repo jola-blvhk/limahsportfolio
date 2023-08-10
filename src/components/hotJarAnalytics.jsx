@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-
 "use client";
+
+import React, { useEffect } from "react";
 
 export const HotjarAnalytics = () => {
   useEffect(() => {
