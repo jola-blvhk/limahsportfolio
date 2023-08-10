@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 
+"use client";
+
 export const HotjarAnalytics = () => {
   useEffect(() => {
     // Replace with your Hotjar tracking code
@@ -21,5 +23,3 @@ export const HotjarAnalytics = () => {
 
   return null;
 };
-
-
