@@ -13,7 +13,9 @@ import Link from "next/link";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-primary-gray-100 pt-20 px-3 md:px-6 lg:px-9 pb-6">
+    <footer
+      className="bg-primary-gray-100 pt-20 px-3 md:px-6 lg:px-9 pb-6"
+    >
       <div className="text-center  m-auto max-w-lg space-y-14  md:pt-16 ">
         <h1
           className={`text-primary-black-100 ${poppins.className} text-3xl md:text-5xl `}
@@ -29,7 +31,7 @@ export const Footer = () => {
           <Link href="mailto:ojuolapebello99@gmail.com">
             <Button
               text="Send me an Email"
-              classN=" text-sm md:text-base bg-secondary-orange-100 border-secondary-orange-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-secondary-orange-100 m-auto"
+              classN=" text-sm md:text-base bg-secondary-orange-100 border-secondary-orange-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-secondary-orange-100 m-auto hover:font-bold"
             />
           </Link>
         </div>

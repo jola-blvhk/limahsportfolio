@@ -13,8 +13,17 @@ import { poppins } from "../../utils/fonts";
 import projects from "../components/featuredProjectsdb.json";
 import competencies from "../components/coreCompetencies.json";
 import reviews from "../components/reviews.json";
+import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth", // Optional: Add smooth scrolling behavior
+    });
+  };
+
   return (
     <main className=" bg-primary-white-100 pt-16">
       <section className="  px-3 md:px-6 lg:px-9 pt-20 pb-20 md:pb-0  bg-primary-gray-100">
@@ -30,16 +39,24 @@ export default function Home() {
             </h1>
 
             <p className="text-primary-black-90">
-             A Product Designer with 4 years + experience creating User Interfaces, 3D Models, graphics presentations etc, with a background in Architecture. I am also a certified Product manager 
+              A Product Designer with 4 years + experience creating User
+              Interfaces, 3D Models, graphics presentations etc, with a
+              background in Architecture. I am also a certified Product manager
             </p>
-            <Button
-              text="Hire me"
-              classN="bg-primary-black-100 text-primary-white-100"
-            />
+            <div>
+              <Link href="mailto:ojuolapebello99@gmail.com">
+                <Button
+                  text="Hire me"
+                  classN="bg-primary-black-100 border border-primary-black-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-primary-black-100 hover:font-bold"
+                />
+              </Link>
+            </div>
+
             <Lottie
               animationData={Scroll}
               loop={true}
               className="hidden md:block w-60"
+              onClick={scrollToBottom}
             />
           </div>
           <div className="">

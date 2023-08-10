@@ -4,10 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { usePathname } from "next/navigation";
+import path from "path";
 
 export const Header = () => {
-  const [dropNav, setDropNav] = useState(false);
+  const pathName = usePathname();
 
+
+  const [dropNav, setDropNav] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
   const [showHoverHome, setShowHoverHome] = useState(false);
   const [showHoverAbout, setShowHoverAbout] = useState(false);
@@ -43,7 +47,7 @@ export const Header = () => {
                     <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
                       Home
                     </li>
-                    {showHoverHome ? (
+                    {showHoverHome || pathName === "/" ? (
                       <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
                     ) : (
                       ""
@@ -62,7 +66,7 @@ export const Header = () => {
                     <li className="  hover:cursor-pointer transition ease-in-out delay-150 text-center py-5 font-medium  ">
                       About Me
                     </li>
-                    {showHoverAbout ? (
+                    {showHoverAbout || pathName === "/about-me" ? (
                       <div className=" absolute top-[calc(100%-3px)] left-0 right-0 h-[3px] bg-secondary-orange-100"></div>
                     ) : (
                       ""
