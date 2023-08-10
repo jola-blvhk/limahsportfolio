@@ -15,6 +15,7 @@ import competencies from "../components/coreCompetencies.json";
 import reviews from "../components/reviews.json";
 import Link from "next/link";
 import { useEffect } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const scrollToBottom = () => {
@@ -24,13 +25,27 @@ export default function Home() {
     });
   };
 
+  useEffect(() => {
+    // Replace with your Hotjar tracking code
+    const hotjarTrackingCode = `(function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3606196,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`;
+
+    const script = document.createElement("script");
+    script.appendChild(document.createTextNode(hotjarTrackingCode));
+    document.head.appendChild(script);
+  }, []);
   return (
     <main className=" bg-primary-white-100 pt-16">
       <section
         className="  px-3 md:px-6 lg:px-9 
       pt-20 pb-20 md:pb-0  bg-primary-gray-100"
       >
-       
         <div className=" grid gap-10 md:gap-0 md:flex maxWidthSection items-center lg:items-end ">
           <div className="space-y-6 order-last md:order-first md:w-[50%] ">
             <h1
