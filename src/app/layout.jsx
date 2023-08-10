@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body className={`${comfortaa.className}`}>
         <Header />
         {children}
-      \
+
         <Footer />
       </body>
     </html>
