@@ -30,9 +30,7 @@ export default function Home() {
             </h1>
 
             <p className="text-primary-black-90">
-              A Product Designer with 4 years + experience creating 3d models,
-              user interfaces, graphics presentations etc, with a background in
-              architecture. I am also a certified Product manager
+             A Product Designer with 4 years + experience creating User Interfaces, 3D Models, graphics presentations etc, with a background in Architecture. I am also a certified Product manager 
             </p>
             <Button
               text="Hire me"
