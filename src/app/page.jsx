@@ -1,5 +1,5 @@
 "use client";
-
+import Script from "next/script";
 import {
   Button,
   FeaturedProjects,
@@ -26,7 +26,11 @@ export default function Home() {
 
   return (
     <main className=" bg-primary-white-100 pt-16">
-      <section className="  px-3 md:px-6 lg:px-9 pt-20 pb-20 md:pb-0  bg-primary-gray-100">
+      <section
+        className="  px-3 md:px-6 lg:px-9 
+      pt-20 pb-20 md:pb-0  bg-primary-gray-100"
+      >
+       
         <div className=" grid gap-10 md:gap-0 md:flex maxWidthSection items-center lg:items-end ">
           <div className="space-y-6 order-last md:order-first md:w-[50%] ">
             <h1
@@ -55,7 +59,7 @@ export default function Home() {
             <Lottie
               animationData={Scroll}
               loop={true}
-              className="hidden md:block w-60"
+              className="hidden md:block w-60 cursor-pointer"
               onClick={scrollToBottom}
             />
           </div>
