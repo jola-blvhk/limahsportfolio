@@ -16,6 +16,7 @@ import reviews from "../components/reviews.json";
 import Link from "next/link";
 import { useEffect } from "react";
 import Head from "next/head";
+import {NextHead}
 
 export default function Home() {
   const scrollToBottom = () => {
@@ -27,16 +28,22 @@ export default function Home() {
 
   useEffect(() => {
     // Replace with your Hotjar tracking code
-    const hotjarTrackingCode = (function(h,o,t,j,a,r){
+    const hotjarTrackingCode = `
+      <!-- Hotjar Tracking Code -->
+      <script>
+       (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:3606196,hjsv:6};
         a=o.getElementsByTagName('head')[0];
         r=o.createElement('script');r.async=1;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');;
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
+      <!-- End Hotjar Tracking Code -->
+    `;
 
-    const script = document.createElement("script");
+    const script = document.createElement('script');
     script.appendChild(document.createTextNode(hotjarTrackingCode));
     document.head.appendChild(script);
   }, []);
