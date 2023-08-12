@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 export const FeaturedProjects = ({
@@ -8,6 +9,7 @@ export const FeaturedProjects = ({
   role,
   description,
   year,
+  id,
 }) => {
   return (
     <div className="grid gap-10 md:grid-cols-2 text-primary-white-100">
@@ -36,9 +38,10 @@ export const FeaturedProjects = ({
           Role: <span>{role}</span>
         </p>
         <p className="text-base md:text-lg">{description}</p>
-        <div className="pt-5 hidden md:block cursor-pointer">
-          
-          <BsArrowUpRightCircle className="text-5xl " />
+        <div className="pt-5 hidden sm:block cursor-pointer">
+          <Link href={`/view-details?id=${id}`}>
+            <BsArrowUpRightCircle className="text-5xl " />
+          </Link>
         </div>
       </div>
     </div>

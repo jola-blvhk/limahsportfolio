@@ -88,6 +88,7 @@ export default function Home() {
               return (
                 <div key={index}>
                   <FeaturedProjects
+                    id={project.id}
                     name={project.title}
                     description={project.description}
                     role={project.role}
