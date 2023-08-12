@@ -17,26 +17,28 @@ const Detail = () => {
   const data = info[0];
 
   return (
-    <main className="pt-20 grid gap-16">
-      <div className="bg-gradient-black px-3 md:px-6 lg:px-9 maxWidthSection ">
-        <p
-          className="font-bold my-10 flex items-center cursor-pointer"
-          onClick={() => router.back()}
-        >
-          <PiCaretLeft className="text-xl" />
-          <span className="ml-4">Go Back</span>
-        </p>
+    <main className="pt-20 grid gap-16 bg-gradient-black">
+      <section className="bg-gradient-black">
+        <div className=" px-3 md:px-6 lg:px-9 maxWidthSection ">
+          <p
+            className="font-bold my-10 flex items-center cursor-pointer"
+            onClick={() => router.back()}
+          >
+            <PiCaretLeft className="text-xl" />
+            <span className="ml-4">Go Back</span>
+          </p>
 
-        <ViewDetailsDescription
-          id={data.id}
-          name={data.title}
-          description={data.description}
-          role={data.role}
-          year={data.year}
-          status={data.status}
-          image={data.image}
-        />
-      </div>
+          <ViewDetailsDescription
+            id={data.id}
+            name={data.title}
+            description={data.description}
+            role={data.role}
+            year={data.year}
+            status={data.status}
+            image={data.image}
+          />
+        </div>
+      </section>
       <div className="hidden w-full bg-gradient-black px-3 md:px-6 lg:px-9 maxWidthSection md:grid grid-cols-3 justify-between text-center border-y py-8">
         <div className="text-center  space-y-6 grid place-items-center">
           <h5 className="">CLIENT</h5>
