@@ -69,9 +69,77 @@ const Detail = () => {
         </div>
       </div>
 
-      <div>
-        <ReactPlayer url="/hardsandsPro/hardsands.mov" controls />
-      </div>
+      <section className="px-3 md:px-6 lg:px-9 mb-16">
+        <div className="maxWidthSection grid gap-10">
+          {id === "1" && (
+            <div className="w-full h-full ">
+              <ReactPlayer
+                url="/hardsandsPro/hardsands.mov"
+                light={
+                  <img
+                    src="/hardsandsPro/second.svg"
+                    className="w-[100%] h-[80%] object-cover"
+                    alt="Thumbnail"
+                  />
+                }
+                controls
+                width="100%"
+                height="100%"
+                className="w-full h-full"
+              />
+            </div>
+          )}
+
+          <div
+            className={`grid gap-8 md:gap-10 ${id === "2" && "md:grid-cols-2"}`}
+          >
+            {id === "2" &&
+              data?.designImages?.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <Image
+                      src={item.image}
+                      width={500}
+                      height={500}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                );
+              })}
+            {id === "1" &&
+              data?.designImages?.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={`${
+                      index === 0 ? "md:col-span-2" : "md:col-span-1"
+                    }`}
+                  >
+                    <Image
+                      src={item.image}
+                      width={500}
+                      height={500}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                );
+              })}
+            {id === "4" &&
+              data?.designImages?.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <Image
+                      src={item.image}
+                      width={500}
+                      height={500}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
