@@ -86,13 +86,12 @@ const Detail = () => {
                 width="100%"
                 height="100%"
                 className="w-full h-full"
+                
               />
             </div>
           )}
 
-          <div
-            className={`grid gap-8  ${id === "2" && "md:grid-cols-2"}`}
-          >
+          <div className={`grid gap-8  ${id === "2" && "md:grid-cols-2"}`}>
             {id === "2" &&
               data?.designImages?.map((item, index) => {
                 return (
@@ -102,6 +101,7 @@ const Detail = () => {
                       width={500}
                       height={500}
                       className="w-full h-full object-contain"
+                      alt="designs"
                     />
                   </div>
                 );
@@ -120,6 +120,7 @@ const Detail = () => {
                       width={500}
                       height={500}
                       className="w-full h-full object-contain"
+                      alt="designs"
                     />
                   </div>
                 );
@@ -133,6 +134,7 @@ const Detail = () => {
                       width={500}
                       height={500}
                       className="w-full h-full object-contain"
+                      alt="designs"
                     />
                   </div>
                 );
