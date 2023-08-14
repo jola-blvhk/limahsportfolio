@@ -6,3 +6,5 @@ export * from "./reviews.jsx";
 export * from "./footer.jsx";
 export * from "./toolKits.jsx";
 export * from "./viewDetailsDescription.jsx";
+export * from "./carouselModal.jsx";
+export * from "./carouselImages.jsx"
