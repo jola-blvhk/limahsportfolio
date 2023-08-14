@@ -6,6 +6,7 @@ import { PiCaretLeft } from "react-icons/pi";
 import projects from "../../components/featuredProjectsdb.json";
 import Image from "next/image";
 import { poppins } from "../../../utils/fonts";
+import ReactPlayer from "react-player";
 
 const Detail = () => {
   const router = useRouter();
@@ -18,8 +19,8 @@ const Detail = () => {
 
   return (
     <main className="pt-20 grid gap-16 bg-gradient-black">
-      <section className="bg-gradient-black">
-        <div className=" px-3 md:px-6 lg:px-9 maxWidthSection ">
+      <section className="bg-gradient-black  px-3 md:px-6 lg:px-9">
+        <div className=" maxWidthSection ">
           <p
             className="font-bold my-10 flex items-center cursor-pointer"
             onClick={() => router.back()}
@@ -35,7 +36,7 @@ const Detail = () => {
             role={data.role}
             year={data.year}
             status={data.status}
-            image={data.image}
+            image={data.descriptionImage}
           />
         </div>
       </section>
@@ -67,7 +68,10 @@ const Detail = () => {
           <p>{data.platform}</p>
         </div>
       </div>
-      <div></div>
+
+      <div>
+        <ReactPlayer url="/hardsandsPro/hardsands.mov" controls />
+      </div>
     </main>
   );
 };

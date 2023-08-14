@@ -7,10 +7,43 @@
     "description": "A technology for managing all your company's relationships and interactions with customers and potential customers. The goal is simple: Improve business relationships to grow your business.",
     "image": "/featuredProducts/hardsands.svg",
     "slug": "",
+    "type": "app",
+    "statusOfDesign": true,
     "status": "Ongoing",
     "client": "/clientLogos/hardsands.svg",
     "industry": "Sales and Marketing",
-    "platform": "Web, iOS, Android"
+    "platform": "Web, iOS, Android",
+    "descriptionImage": "/hardsandsPro/descriptionImage.svg",
+    "designImages": [
+      {
+        "id": "1",
+        "image": "/hardsandsPro/first.svg"
+      },
+      {
+        "id": "2",
+        "image": "/hardsandsPro/second.svg"
+      },
+      {
+        "id": "3",
+        "image": "/hardsandsPro/third.svg"
+      },
+      {
+        "id": "4",
+        "image": "/hardsandsPro/fourth.svg"
+      },
+      {
+        "id": "5",
+        "image": "/hardsandsPro/fifth.svg"
+      },
+      {
+        "id": "6",
+        "image": "/hardsandsPro/sixth.svg"
+      },
+      {
+        "id": "7",
+        "image": "/hardsandsPro/seventh.svg"
+      }
+    ]
   },
   {
     "id": "2",
@@ -20,10 +53,55 @@
     "description": " NFTrace unlocks the power of digital collectibles with AR-powered platform. Connect with brands, businesses, and communities through real-world use cases and engage Gen Z like never before.",
     "image": "/featuredProducts/nftgamification.svg",
     "slug": "",
+    "type": "app",
+    "statusOfDesign": true,
     "status": "Complete",
     "client": "/clientLogos/pikd.png",
     "industry": "NFT Gamification",
-    "platform": "Web, iOS, Android"
+    "platform": "Web, iOS, Android",
+    "descriptionImage": "/nftTrace/descriptionImage.svg",
+    "designImages": [
+      {
+        "id": "1",
+        "image": "/nftTrace/first.svg"
+      },
+      {
+        "id": "2",
+        "image": "/nftTrace/second.svg"
+      },
+      {
+        "id": "3",
+        "image": "/nftTrace/third.svg"
+      },
+      {
+        "id": "4",
+        "image": "/nftTrace/fourth.svg"
+      },
+      {
+        "id": "5",
+        "image": "/nftTrace/fifth.svg"
+      },
+      {
+        "id": "6",
+        "image": "/nftTrace/sixth.svg"
+      },
+      {
+        "id": "7",
+        "image": "/nftTrace/seventh.svg"
+      },
+      {
+        "id": "8",
+        "image": "/nftTrace/eigth.svg"
+      },
+      {
+        "id": "9",
+        "image": "/nftTrace/ninth.svg"
+      },
+      {
+        "id": "10",
+        "image": "/nftTrace/tenth.svg"
+      }
+    ]
   },
   {
     "id": "3",
@@ -33,10 +111,23 @@
     "description": "Becomy is a Saas E-Commerce Tool for online businesses to sell their products with unique marketing strategies and a customizeable page builder.",
     "image": "/featuredProducts/becomy.svg",
     "slug": "",
+    "type": "app",
+    "statusOfDesign": true,
     "status": "Ongoing",
     "client": "",
     "industry": "Sales and Marketing",
-    "platform": "Web, iOS, Android"
+    "platform": "Web, iOS, Android",
+    "descriptionImage": "/becomy/descriptionImage.svg",
+    "designImages": [
+      {
+        "id": "1",
+        "image": "/nftTrace/first.svg"
+      },
+      {
+        "id": "2",
+        "image": "/nftTrace/second.svg"
+      }
+    ]
   },
   {
     "id": "4",
@@ -46,9 +137,22 @@
     "description": "HolaBeauty is an  Edutech platform that offers a comprehensive range of tutorials and certifications in beauty and fashion.",
     "image": "/featuredProducts/halabeauty.svg",
     "slug": "",
+    "type": "app",
+    "statusOfDesign": true,
     "status": "Ongoing",
     "client": "hola beauty",
     "industry": "Beauty and Fashion",
-    "platform": "Web, iOS, Android"
+    "platform": "Web, iOS, Android",
+    "descriptionImage": "/halabeauty/descriptionImage.svg",
+    "designImages": [
+      {
+        "id": "1",
+        "image": "/halabeauty/first.svg"
+      },
+      {
+        "id": "2",
+        "image": "/halabeauty/second.svg"
+      }
+    ]
   }
 ]
