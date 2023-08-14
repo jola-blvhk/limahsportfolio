@@ -91,7 +91,7 @@ const Detail = () => {
           )}
 
           <div
-            className={`grid gap-8 md:gap-10 ${id === "2" && "md:grid-cols-2"}`}
+            className={`grid gap-8  ${id === "2" && "md:grid-cols-2"}`}
           >
             {id === "2" &&
               data?.designImages?.map((item, index) => {
