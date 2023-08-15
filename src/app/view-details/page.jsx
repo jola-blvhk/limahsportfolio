@@ -27,7 +27,7 @@ const Detail = () => {
       return info.id === id;
     });
     setData(infoNeeded[0]);
-  }, []);
+  }, [id]);
 
   return (
     <>
