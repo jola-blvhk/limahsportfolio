@@ -10,11 +10,15 @@ import { useEffect } from "react";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Ojuolape's Portfolio",
+  desription: "Welcome to the best portfolio!",
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/portfolio.ico" />
       </head>
       <body className={`${comfortaa.className}`}>
         <Header />
