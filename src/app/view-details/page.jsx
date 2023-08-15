@@ -177,7 +177,7 @@ const Detail = () => {
       <CarouselModal show={showModal} onClose={() => setShowModal(false)}>
         <div className="flex flex-col rounded-[0.63rem] md:mt-16">
           <IoClose
-            className="text-4xl float-right self-end"
+            className="text-4xl float-right self-end text-white"
             onClick={() => setShowModal(false)}
           />
           <CarouselImages

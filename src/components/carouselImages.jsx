@@ -21,7 +21,7 @@ export const CarouselImages = ({ data, activeIndex }) => {
 
   return (
     <div className="flex">
-      <button className="text-3xl md:text-4xl" onClick={scrollPrev}>
+      <button className="text-3xl md:text-4xl text-white" onClick={scrollPrev}>
         <BiCaretLeftCircle />
       </button>
       <div className=" overflow-hidden m-auto  " ref={emblaRef}>
@@ -45,7 +45,7 @@ export const CarouselImages = ({ data, activeIndex }) => {
         </div>
       </div>
 
-      <button className="text-3xl md:text-4xl" onClick={scrollNext}>
+      <button className="text-3xl md:text-4xl text-white" onClick={scrollNext}>
         <BiCaretRightCircle />
       </button>
     </div>
