@@ -16,6 +16,8 @@ import { IoClose } from "react-icons/io5";
 
 const Detail = () => {
   const [showModal, setShowModal] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const router = useRouter();
   const id = useSearchParams().get("id");
   const info = projects.filter((info) => {
@@ -23,7 +25,7 @@ const Detail = () => {
   });
 
   const data = info[0];
-  
+
   return (
     <>
       <main className="pt-20 grid gap-16 bg-gradient-black">
@@ -102,7 +104,13 @@ const Detail = () => {
               {id === "2" &&
                 data?.designImages?.map((item, index) => {
                   return (
-                    <div key={index} onClick={() => setShowModal(true)}>
+                    <div
+                      key={index}
+                      onClick={() => {
+                        setActiveIndex(index);
+                        setShowModal(true);
+                      }}
+                    >
                       <Image
                         src={item.image}
                         width={500}
@@ -118,7 +126,10 @@ const Detail = () => {
                   return (
                     <div
                       key={index}
-                      onClick={() => setShowModal(true)}
+                      onClick={() => {
+                        setActiveIndex(index);
+                        setShowModal(true);
+                      }}
                       className={`${
                         index === 0 ? "md:col-span-2" : "md:col-span-1"
                       }`}
@@ -136,7 +147,13 @@ const Detail = () => {
               {id === "4" &&
                 data?.designImages?.map((item, index) => {
                   return (
-                    <div key={index} onClick={() => setShowModal(true)}>
+                    <div
+                      key={index}
+                      onClick={() => {
+                        setActiveIndex(index);
+                        setShowModal(true);
+                      }}
+                    >
                       <Image
                         src={item.image}
                         width={500}
@@ -159,6 +176,8 @@ const Detail = () => {
           />
           <CarouselImages
             data={data?.designImages}
+            activeIndex={activeIndex}
+        
             // setShowDisableUser={() => setShowDisableUserModal(false)}
             // userId={id}
           />
