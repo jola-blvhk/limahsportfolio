@@ -31,6 +31,7 @@ export const Header = () => {
                 height={50}
                 alt="portfolio-logo"
                 className="w-10 h-10"
+                priority
               />
             </div>
             <div className="hidden md:block ">
