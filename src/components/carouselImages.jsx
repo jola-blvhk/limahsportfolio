@@ -30,7 +30,7 @@ export const CarouselImages = ({ data, activeIndex }) => {
             return (
               <div
                 key={index}
-                className="flex-[0_0_100%] lg:flex-[0_0_100%] flex items-center  min-w-0"
+                className="flex-[0_0_100%] lg:flex-[0_0_80%] flex items-center  min-w-0"
               >
                 <Image
                   src={item.image}

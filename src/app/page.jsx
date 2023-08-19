@@ -69,7 +69,7 @@ export default function Home() {
               width={500}
               height={500}
               alt="image"
-              className="w-[100%] h-[100%] sm:w-[80%] sm:h-[80%] md:w-[130%] md:h-[110%] m-auto object-contain "
+              className="w-[100%] h-[100%] sm:w-[80%] sm:h-[80%] md:w-[130%] md:h-[110%] m-auto object-contain"
             />
           </div>
         </div>

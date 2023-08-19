@@ -14,13 +14,15 @@ export const FeaturedProjects = ({
   return (
     <div className="grid gap-10 md:grid-cols-2 text-primary-white-100">
       <div>
-        <Image
-          src={image}
-          width={100}
-          height={100}
-          alt={name}
-          className="w-[100%] h-[100%] object-contain"
-        />
+        <Link href={`/view-details?id=${id}`}>
+          <Image
+            src={image}
+            width={100}
+            height={100}
+            alt={name}
+            className="w-[100%] h-[100%] object-contain"
+          />
+        </Link>
       </div>
       <div className="space-y-4">
         <p

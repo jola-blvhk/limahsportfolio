@@ -50,13 +50,15 @@ const Detail = () => {
               year={data?.year}
               status={data?.status}
               image={data?.descriptionImage}
+              text={data?.type}
+              link={data?.webLink}
             />
           </div>
         </section>
         <div className="hidden w-full bg-gradient-black px-3 md:px-6 lg:px-9 maxWidthSection md:grid grid-cols-3 justify-between text-center border-y py-8">
           <div className="text-center  space-y-6 grid place-items-center">
             <h5 className="">CLIENT</h5>
-            {data?.id !== "4" ? (
+            {data?.id !== "4" && data?.id !== "3" ? (
               <Image
                 src={data?.client}
                 alt={data?.name}
@@ -66,7 +68,9 @@ const Detail = () => {
               />
             ) : (
               <h1
-                className={`${poppins.className} text-4xl capitalize text-[#A6908F] font-semibold`}
+                className={`${poppins.className} text-4xl capitalize ${
+                  data?.id === "4" ? "text-[#A6908F]" : "text-white"
+                } font-semibold`}
               >
                 {data?.client}
               </h1>
@@ -150,7 +154,7 @@ const Detail = () => {
                     </div>
                   );
                 })}
-              {id === "4" &&
+              {(id === "3" || id === "4") &&
                 data?.designImages?.map((item, index) => {
                   return (
                     <div

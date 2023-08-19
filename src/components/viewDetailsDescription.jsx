@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from ".";
 import Image from "next/image";
+import Link from "next/link";
 
 export const ViewDetailsDescription = ({
   image,
@@ -8,7 +9,9 @@ export const ViewDetailsDescription = ({
   status,
   role,
   description,
-  year
+  year,
+  text,
+  link,
 }) => {
   return (
     <div className="">
@@ -39,11 +42,16 @@ export const ViewDetailsDescription = ({
           <p className="text-sm md:text-base mt-10">
             Role: <span>{role}</span>
           </p>
-          <div className="pt-5  cursor-pointer w-full ">
-            <Button
-              text="View app"
-              classN=" text-sm w-full sm:w-fit flex justify-center sm:block text-center border  md:text-base bg-secondary-orange-100 border-secondary-orange-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-secondary-orange-100  hover:font-bold"
-            />
+
+          <div
+            className={`pt-5  cursor-pointer w-full ${text === "" && "hidden"}`}
+          >
+            <a href={link}>
+              <Button
+                text={text}
+                classN=" text-sm w-full sm:w-fit flex justify-center sm:block text-center border  md:text-base bg-secondary-orange-100 border-secondary-orange-100 text-primary-white-100 hover:bg-primary-white-100 hover:text-secondary-orange-100  hover:font-bold"
+              />
+            </a>
           </div>
         </div>
       </div>

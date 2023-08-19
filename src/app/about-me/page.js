@@ -9,7 +9,7 @@ const AboutMe = () => {
     <main className="pt-20">
       <section className="bg-gradient-black px-3 md:px-6 lg:px-9">
         <h1
-          className={` text-primary-gray-90 ${poppins.className} maxWidthSection text-center text-3xl md:text-5xl py-10 border-b`}
+          className={` text-primary-gray-90 ${poppins.className} maxWidthSection text-center text-3xl md:text-4xl py-10 border-b`}
         >
           Ojuolape Bello
         </h1>
@@ -17,7 +17,7 @@ const AboutMe = () => {
         <div className="grid md:flex maxWidthSection gap-6 md:gap-0 py-4  md:py-16">
           <div className="md:w-[30%]">
             <h1
-              className={` text-primary-gray-90 ${poppins.className} text-3xl md:text-5xl `}
+              className={` text-primary-gray-90 ${poppins.className} text-3xl md:text-4xl `}
             >
               Bio
             </h1>
@@ -57,7 +57,7 @@ const AboutMe = () => {
 
         <section className="pt-16 pb-8 md:py-20 lg:py-24">
           <h1
-            className={`maxWidthSection text-primary-gray-90 text-left md:text-center ${poppins.className} text-3xl md:text-5xl `}
+            className={`maxWidthSection text-primary-gray-90 text-left md:text-center ${poppins.className} text-3xl md:text-4xl `}
           >
             Tool Kit
           </h1>
@@ -69,7 +69,7 @@ const AboutMe = () => {
         <section className=" ">
           <div className="maxWidthSection  pb-20 md:pb-32">
             <h1
-              className={`text-left md:text-center font-bold text-3xl md:text-5xl mb-12 md:mb-20 text-primary-gray-80 ${poppins.className}`}
+              className={`text-left md:text-center font-bold text-3xl md:text-4xl mb-12 md:mb-20 text-primary-gray-80 ${poppins.className}`}
             >
               Core Competencies
             </h1>
