@@ -38,8 +38,8 @@ const Detail = () => {
               className="font-bold my-10 flex items-center cursor-pointer"
               onClick={() => router.back()}
             >
-              <PiCaretLeft className="text-xl" />
-              <span className="ml-4">Go Back</span>
+              <PiCaretLeft className="text-xl text-primary-white-100" />
+              <span className="ml-4 text-primary-white-100">Go Back</span>
             </p>
 
             <ViewDetailsDescription
