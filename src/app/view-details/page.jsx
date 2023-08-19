@@ -55,7 +55,7 @@ const Detail = () => {
             />
           </div>
         </section>
-        <div className="hidden w-full bg-gradient-black px-3 md:px-6 lg:px-9 maxWidthSection md:grid grid-cols-3 justify-between text-center border-y py-8">
+        <div className="hidden w-full bg-gradient-black px-3 md:px-6 lg:px-9 maxWidthSection md:grid grid-cols-3 justify-between text-center border-y py-8 text-primary-white-100">
           <div className="text-center  space-y-6 grid place-items-center">
             <h5 className="">CLIENT</h5>
             {data?.id !== "4" && data?.id !== "3" ? (
