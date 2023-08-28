@@ -57,7 +57,7 @@ const Detail = () => {
         </section>
         <div className="hidden w-full bg-gradient-black px-3 md:px-6 lg:px-9 maxWidthSection md:grid grid-cols-3 justify-between text-center border-y py-8 ">
           <div className="text-center  space-y-6 grid place-items-center">
-            <h5 className="">CLIENT</h5>
+            <h5 className=" text-white">CLIENT</h5>
             {data?.id !== "4" && data?.id !== "3" ? (
               <Image
                 src={data?.client}
@@ -87,7 +87,7 @@ const Detail = () => {
         </div>
 
         <section className="px-3 md:px-6 lg:px-9 mb-16">
-          <div className="maxWidthSection grid gap-10">
+          <div className="maxWidthSection grid gap-10 ">
             {id === "1" && (
               <div className="w-full h-full ">
                 <ReactPlayer
