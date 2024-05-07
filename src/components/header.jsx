@@ -74,7 +74,7 @@ export const Header = () => {
                   </div>
                 </Link>
                 <Link
-                  href="https://drive.google.com/file/d/16IHoj1JjZR-jUV0FPcyDgRi9ey6fvcEs/view"
+                  href="https://drive.google.com/file/d/1MEHa008-0C5Amy7nxM7am6Zr6hq572Jv/view"
                   className={`grid place-items-center 
               `}
                   onMouseEnter={() => setShowHoverResume(true)}
@@ -157,7 +157,7 @@ export const Header = () => {
                 </li>
               </Link>
               <Link
-                href="https://drive.google.com/file/d/16IHoj1JjZR-jUV0FPcyDgRi9ey6fvcEs/view"
+                href="https://drive.google.com/file/d/1MEHa008-0C5Amy7nxM7am6Zr6hq572Jv/view"
                 onClick={() => {
                   setDropNav(false);
                 }}
